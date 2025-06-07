@@ -1,0 +1,6 @@
+id,title,speaker,company,time,description,status,featured,track,level,tags
+1,Neural Networks & Deep Learning Frontiers,Dr. Sarah Chen,MIT AI Lab,10:00 AM - 11:00 AM,Exploring cutting-edge neural architecture and their applications in autonomous systems.,live,False,AI/ML,Advanced,"['AI', 'Neural Networks', 'Deep Learning']"
+2,Quantum Computing Breakthrough Applications,Prof. Michael Zhang,IBM Research,10:30 AM - 11:30 AM,Real-world quantum computing applications in cryptography and optimization.,live,False,Quantum,Expert,"['Quantum Computing', 'Cryptography', 'Optimization']"
+3,Blockchain Infrastructure & Scalability,Elena Rodriguez,Ethereum Foundation,10:15 AM - 11:15 AM,Advanced blockchain architecture for enterprise-grade applications.,live,False,Blockchain,Intermediate,"['Blockchain', 'Scalability', 'Infrastructure']"
+4,The Future of Autonomous Vehicles,David Chen,Tesla Autopilot,2:00 PM - 3:00 PM,Next-generation self-driving technology and safety protocols.,upcoming,True,Automotive,Intermediate,"['Autonomous Vehicles', 'AI', 'Safety']"
+5,DevOps & Cloud Infrastructure,Tom Anderson,Docker,8:00 AM - 9:00 AM,Modern containerization strategies and deployment pipelines.,finished,False,DevOps,Beginner,"['DevOps', 'Docker', 'Cloud']"

@@ -1,0 +1,140 @@
+
+/* Generated Event Lobby Styles */
+:root {
+  --primary-color: #667eea;
+  --secondary-color: #764ba2;
+  --success-color: #10b981;
+  --warning-color: #fbbf24;
+  --error-color: #ef4444;
+  --neutral-color: #6b7280;
+  --body-bg: #f8fafc;
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+}
+
+/* Body */
+body {
+  background: #f8fafc !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Header */
+.header {
+  background: #667eea !important;
+  color: #ffffff !important;
+  padding: 15px 40px !important;
+}
+
+.logo {
+  color: #ffffff !important;
+  font-size: 28px !important;
+}
+
+/* Masthead */
+.masthead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: #ffffff !important;
+  padding: 60px 40px !important;
+}
+
+.masthead h1 {
+  font-size: 48px !important;
+}
+
+.masthead p {
+  font-size: 20px !important;
+}
+
+/* Navigation */
+.nav-tabs {
+  background: #ffffff !important;
+  border-bottom-color: #e5e7eb !important;
+  height: 60px !important;
+}
+
+.nav-tab {
+  color: #6b7280 !important;
+  font-size: 16px !important;
+}
+
+.nav-tab.active {
+  color: #667eea !important;
+  border-bottom-color: #667eea !important;
+}
+
+/* Content Layout */
+.content {
+  max-width: 1400px !important;
+  padding: 40px !important;
+}
+
+.sessions-grid {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) !important;
+  gap: 25px !important;
+}
+
+.section {
+  margin-bottom: 50px !important;
+}
+
+.section-title {
+  font-size: 28px !important;
+  color: #1f2937 !important;
+}
+
+/* Session Cards */
+.session-card {
+  background: #ffffff !important;
+  border-radius: 12px !important;
+  padding: 25px !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08) !important;
+  transition: all 0.3s ease !important;
+}
+
+.session-title {
+  color: #1f2937 !important;
+}
+
+.session-description {
+  color: #4b5563 !important;
+}
+
+.session-time, .session-speakers {
+  color: #6b7280 !important;
+}
+
+.btn-primary {
+  background: #667eea !important;
+  color: #ffffff !important;
+}
+
+/* Speaker Cards */
+.speaker-card {
+  background: #ffffff !important;
+  border-radius: 12px !important;
+  padding: 25px !important;
+}
+
+.speaker-avatar {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  width: 80px !important;
+  height: 80px !important;
+}
+
+.speaker-name {
+  color: #1f2937 !important;
+}
+
+.speaker-title {
+  color: #6b7280 !important;
+}
+
+/* Quick Actions */
+.quick-actions {
+  background: #ffffff !important;
+  border-radius: 12px !important;
+  padding: 20px !important;
+}
+
+/* Custom CSS */
+

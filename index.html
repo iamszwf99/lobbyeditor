@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechConnect 2024</title>
+    <meta name="description" content="Join TechConnect 2024 for cutting-edge technology sessions">
+    <meta name="keywords" content="technology, conference, AI, blockchain, quantum computing">
+    <meta name="author" content="TechConnect Organizers">
+    
+    <!-- Social Sharing -->
+    <meta property="og:title" content="Join me at TechConnect 2024!">
+    <meta property="og:description" content="Discover the future of technology">
+    <meta property="og:type" content="website">
+    
+    <style>
+        
+/* Generated Event Lobby Styles */
+:root {
+  --primary-color: #667eea;
+  --secondary-color: #764ba2;
+  --success-color: #10b981;
+  --warning-color: #fbbf24;
+  --error-color: #ef4444;
+  --neutral-color: #6b7280;
+  --body-bg: #f8fafc;
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+}
+
+/* Body */
+body {
+  background: #f8fafc !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Header */
+.header {
+  background: #667eea !important;
+  color: #ffffff !important;
+  padding: 15px 40px !important;
+}
+
+.logo {
+  color: #ffffff !important;
+  font-size: 28px !important;
+}
+
+/* Masthead */
+.masthead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: #ffffff !important;
+  padding: 60px 40px !important;
+}
+
+.masthead h1 {
+  font-size: 48px !important;
+}
+
+.masthead p {
+  font-size: 20px !important;
+}
+
+/* Navigation */
+.nav-tabs {
+  background: #ffffff !important;
+  border-bottom-color: #e5e7eb !important;
+  height: 60px !important;
+}
+
+.nav-tab {
+  color: #6b7280 !important;
+  font-size: 16px !important;
+}
+
+.nav-tab.active {
+  color: #667eea !important;
+  border-bottom-color: #667eea !important;
+}
+
+/* Content Layout */
+.content {
+  max-width: 1400px !important;
+  padding: 40px !important;
+}
+
+.sessions-grid {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) !important;
+  gap: 25px !important;
+}
+
+.section {
+  margin-bottom: 50px !important;
+}
+
+.section-title {
+  font-size: 28px !important;
+  color: #1f2937 !important;
+}
+
+/* Session Cards */
+.session-card {
+  background: #ffffff !important;
+  border-radius: 12px !important;
+  padding: 25px !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08) !important;
+  transition: all 0.3s ease !important;
+}
+
+.session-title {
+  color: #1f2937 !important;
+}
+
+.session-description {
+  color: #4b5563 !important;
+}
+
+.session-time, .session-speakers {
+  color: #6b7280 !important;
+}
+
+.btn-primary {
+  background: #667eea !important;
+  color: #ffffff !important;
+}
+
+/* Speaker Cards */
+.speaker-card {
+  background: #ffffff !important;
+  border-radius: 12px !important;
+  padding: 25px !important;
+}
+
+.speaker-avatar {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  width: 80px !important;
+  height: 80px !important;
+}
+
+.speaker-name {
+  color: #1f2937 !important;
+}
+
+.speaker-title {
+  color: #6b7280 !important;
+}
+
+/* Quick Actions */
+.quick-actions {
+  background: #ffffff !important;
+  border-radius: 12px !important;
+  padding: 20px !important;
+}
+
+/* Custom CSS */
+
+
+        
+        /* Base styles from original lobby */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        .header-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: 14px;
+        }
+        
+        .nav-tabs {
+            border-bottom: 1px solid var(--nav-border);
+            display: flex;
+            gap: 40px;
+            padding: 0 40px;
+        }
+        
+        .nav-tab {
+            padding: 15px 0;
+            font-weight: 600;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-tab.active {
+            border-bottom-color: var(--nav-active);
+        }
+        
+        .masthead {
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .masthead-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .event-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 32px;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        
+        .quick-actions {
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        
+        .search-container {
+            position: relative;
+            flex: 1;
+            max-width: 400px;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 12px 20px 12px 45px;
+            border: 2px solid #e5e7eb;
+            border-radius: 25px;
+            font-size: 14px;
+            background: #f9fafb;
+        }
+        
+        .search-icon {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #9ca3af;
+        }
+        
+        .filter-btn {
+            padding: 10px 20px;
+            border: 2px solid #e5e7eb;
+            background: white;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+        
+        .filter-btn.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+        
+        .sessions-grid {
+            display: grid;
+            margin-bottom: 50px;
+        }
+        
+        .session-card {
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .session-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+        
+        .session-card.featured {
+            background: linear-gradient(135deg, #fef3c7 0%, #fbbf24 1%, white 1%);
+        }
+        
+        .featured-badge {
+            position: absolute;
+            top: -2px;
+            left: 15px;
+            background: #fbbf24;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 0 0 8px 8px;
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        .session-status {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        
+        .status-live {
+            background: #fee2e2;
+            color: #dc2626;
+        }
+        
+        .status-finished {
+            background: #f3f4f6;
+            color: #6b7280;
+        }
+        
+        .status-future {
+            background: #dbeafe;
+            color: #2563eb;
+        }
+        
+        .session-actions {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        
+        .btn-primary {
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            flex: 1;
+        }
+        
+        .bookmark-btn {
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+        
+        .speakers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .speaker-card {
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .speaker-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+        
+        .speaker-avatar {
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        
+        .speaker-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .speaker-title {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .speaker-sessions {
+            font-size: 12px;
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+        
+        .section {
+            margin-bottom: var(--section-spacing, 50px);
+        }
+        
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-weight: bold;
+        }
+        
+        .section-subtitle {
+            font-size: 16px;
+            margin-top: 5px;
+        }
+        
+        .view-all {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+        
+        .view-all:hover {
+            background: #f3f4f6;
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                padding: 15px 20px;
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .sessions-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .quick-actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .masthead {
+                padding: 40px 20px;
+            }
+            
+            .event-stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">TechConnect 2024</div>
+        <div class="header-info">
+            <div>🔴 3 sessions live now</div>
+            <div>📚 7 bookmarked</div>
+            <div>Welcome, Alex Chen</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-tabs">
+        <div class="nav-tab active">Lobby</div><div class="nav-tab ">My Agenda</div><div class="nav-tab ">All Sessions</div><div class="nav-tab ">Speakers</div><div class="nav-tab ">Networking</div>
+    </div>
+
+    <!-- Masthead -->
+    <div class="masthead">
+        <div class="masthead-content">
+            <h1>Welcome to TechConnect 2024</h1>
+            <p>The Future of Technology - Two Days of Innovation and Discovery</p>
+            
+            <div class="event-stats">
+                <div class="stat"><span class="stat-number">100+</span><span class="stat-label">Sessions</span></div><div class="stat"><span class="stat-number">150+</span><span class="stat-label">Speakers</span></div><div class="stat"><span class="stat-number">5000+</span><span class="stat-label">Attendees</span></div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <!-- Quick Actions -->
+        
+        <div class="quick-actions">
+            <div class="search-container"><input type="text" class="search-input" placeholder="Search sessions, speakers, topics..."><span class="search-icon">🔍</span></div>
+            <button class="filter-btn active">All Sessions</button><button class="filter-btn">Live Now</button><button class="filter-btn">Upcoming</button>
+            <button class="filter-btn">📅 Download Schedule</button>
+        </div>
+        
+
+        <!-- Sections -->
+        
+                <div class="section">
+                    <div class="section-header">
+                        <div>
+                            <h2 class="section-title">Live Now</h2>
+                            <p class="section-subtitle">Join these sessions happening right now</p>
+                        </div>
+                        <a href="#" class="view-all">View all →</a>
+                    </div>
+                    <div class="sessions-grid">
+                        
+            <div class="session-card ">
+                
+                <div class="session-status status-live">LIVE</div>
+                <div class="session-time">10:00 AM - 11:00 AM</div>
+                <h3 class="session-title">Neural Networks & Deep Learning Frontiers</h3>
+                <div class="session-speakers">👤 Dr. Sarah Chen, MIT AI Lab</div>
+                <div class="session-description">Exploring cutting-edge neural architecture and their applications in autonomous systems.</div>
+                <div class="session-actions">
+                    <button class="btn-primary">
+                        Join
+                    </button>
+                    <button class="bookmark-btn">🤍</button>
+                </div>
+            </div>
+            
+            <div class="session-card ">
+                
+                <div class="session-status status-live">LIVE</div>
+                <div class="session-time">10:30 AM - 11:30 AM</div>
+                <h3 class="session-title">Quantum Computing Breakthrough Applications</h3>
+                <div class="session-speakers">👤 Prof. Michael Zhang, IBM Research</div>
+                <div class="session-description">Real-world quantum computing applications in cryptography and optimization.</div>
+                <div class="session-actions">
+                    <button class="btn-primary">
+                        Join
+                    </button>
+                    <button class="bookmark-btn">🤍</button>
+                </div>
+            </div>
+            
+            <div class="session-card ">
+                
+                <div class="session-status status-live">LIVE</div>
+                <div class="session-time">10:15 AM - 11:15 AM</div>
+                <h3 class="session-title">Blockchain Infrastructure & Scalability</h3>
+                <div class="session-speakers">👤 Elena Rodriguez, Ethereum Foundation</div>
+                <div class="session-description">Advanced blockchain architecture for enterprise-grade applications.</div>
+                <div class="session-actions">
+                    <button class="btn-primary">
+                        Join
+                    </button>
+                    <button class="bookmark-btn">🤍</button>
+                </div>
+            </div>
+            
+            <div class="session-card featured">
+                <div class="featured-badge">Featured</div>
+                <div class="session-status status-future">UPCOMING</div>
+                <div class="session-time">2:00 PM - 3:00 PM</div>
+                <h3 class="session-title">The Future of Autonomous Vehicles</h3>
+                <div class="session-speakers">👤 David Chen, Tesla Autopilot</div>
+                <div class="session-description">Next-generation self-driving technology and safety protocols.</div>
+                <div class="session-actions">
+                    <button class="btn-primary">
+                        View Details
+                    </button>
+                    <button class="bookmark-btn">🤍</button>
+                </div>
+            </div>
+            
+            <div class="session-card ">
+                
+                <div class="session-status status-finished">ENDED</div>
+                <div class="session-time">8:00 AM - 9:00 AM</div>
+                <h3 class="session-title">DevOps & Cloud Infrastructure</h3>
+                <div class="session-speakers">👤 Tom Anderson, Docker</div>
+                <div class="session-description">Modern containerization strategies and deployment pipelines.</div>
+                <div class="session-actions">
+                    <button class="btn-primary">
+                        Watch Recording
+                    </button>
+                    <button class="bookmark-btn">🤍</button>
+                </div>
+            </div>
+            
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <div class="section-header">
+                        <div>
+                            <h2 class="section-title">Coming Up Next</h2>
+                            <p class="section-subtitle">Sessions starting in the next 2 hours</p>
+                        </div>
+                        <a href="#" class="view-all">View all →</a>
+                    </div>
+                    <div class="sessions-grid">
+                        
+            <div class="session-card ">
+                
+                <div class="session-status status-live">LIVE</div>
+                <div class="session-time">10:00 AM - 11:00 AM</div>
+                <h3 class="session-title">Neural Networks & Deep Learning Frontiers</h3>
+                <div class="session-speakers">👤 Dr. Sarah Chen, MIT AI Lab</div>
+                <div class="session-description">Exploring cutting-edge neural architecture and their applications in autonomous systems.</div>
+                <div class="session-actions">
+                    <button class="btn-primary">
+                        Join
+                    </button>
+                    <button class="bookmark-btn">🤍</button>
+                </div>
+            </div>
+            
+            <div class="session-card ">
+                
+                <div class="session-status status-live">LIVE</div>
+                <div class="session-time">10:30 AM - 11:30 AM</div>
+                <h3 class="session-title">Quantum Computing Breakthrough Applications</h3>
+                <div class="session-speakers">👤 Prof. Michael Zhang, IBM Research</div>
+                <div class="session-description">Real-world quantum computing applications in cryptography and optimization.</div>
+                <div class="session-actions">
+                    <button class="btn-primary">
+                        Join
+                    </button>
+                    <button class="bookmark-btn">🤍</button>
+                </div>
+            </div>
+            
+            <div class="session-card ">
+                
+                <div class="session-status status-live">LIVE</div>
+                <div class="session-time">10:15 AM - 11:15 AM</div>
+                <h3 class="session-title">Blockchain Infrastructure & Scalability</h3>
+                <div class="session-speakers">👤 Elena Rodriguez, Ethereum Foundation</div>
+                <div class="session-description">Advanced blockchain architecture for enterprise-grade applications.</div>
+                <div class="session-actions">
+                    <button class="btn-primary">
+                        Join
+                    </button>
+                    <button class="bookmark-btn">🤍</button>
+                </div>
+            </div>
+            
+            <div class="session-card featured">
+                <div class="featured-badge">Featured</div>
+                <div class="session-status status-future">UPCOMING</div>
+                <div class="session-time">2:00 PM - 3:00 PM</div>
+                <h3 class="session-title">The Future of Autonomous Vehicles</h3>
+                <div class="session-speakers">👤 David Chen, Tesla Autopilot</div>
+                <div class="session-description">Next-generation self-driving technology and safety protocols.</div>
+                <div class="session-actions">
+                    <button class="btn-primary">
+                        View Details
+                    </button>
+                    <button class="bookmark-btn">🤍</button>
+                </div>
+            </div>
+            
+            <div class="session-card ">
+                
+                <div class="session-status status-finished">ENDED</div>
+                <div class="session-time">8:00 AM - 9:00 AM</div>
+                <h3 class="session-title">DevOps & Cloud Infrastructure</h3>
+                <div class="session-speakers">👤 Tom Anderson, Docker</div>
+                <div class="session-description">Modern containerization strategies and deployment pipelines.</div>
+                <div class="session-actions">
+                    <button class="btn-primary">
+                        Watch Recording
+                    </button>
+                    <button class="bookmark-btn">🤍</button>
+                </div>
+            </div>
+            
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <div class="section-header">
+                        <div>
+                            <h2 class="section-title">Featured Sessions - Day 1</h2>
+                            <p class="section-subtitle">Don't miss these highlighted sessions</p>
+                        </div>
+                        <a href="#" class="view-all">View all →</a>
+                    </div>
+                    <div class="sessions-grid">
+                        
+            <div class="session-card ">
+                
+                <div class="session-status status-live">LIVE</div>
+                <div class="session-time">10:00 AM - 11:00 AM</div>
+                <h3 class="session-title">Neural Networks & Deep Learning Frontiers</h3>
+                <div class="session-speakers">👤 Dr. Sarah Chen, MIT AI Lab</div>
+                <div class="session-description">Exploring cutting-edge neural architecture and their applications in autonomous systems.</div>
+                <div class="session-actions">
+                    <button class="btn-primary">
+                        Join
+                    </button>
+                    <button class="bookmark-btn">🤍</button>
+                </div>
+            </div>
+            
+            <div class="session-card ">
+                
+                <div class="session-status status-live">LIVE</div>
+                <div class="session-time">10:30 AM - 11:30 AM</div>
+                <h3 class="session-title">Quantum Computing Breakthrough Applications</h3>
+                <div class="session-speakers">👤 Prof. Michael Zhang, IBM Research</div>
+                <div class="session-description">Real-world quantum computing applications in cryptography and optimization.</div>
+                <div class="session-actions">
+                    <button class="btn-primary">
+                        Join
+                    </button>
+                    <button class="bookmark-btn">🤍</button>
+                </div>
+            </div>
+            
+            <div class="session-card ">
+                
+                <div class="session-status status-live">LIVE</div>
+                <div class="session-time">10:15 AM - 11:15 AM</div>
+                <h3 class="session-title">Blockchain Infrastructure & Scalability</h3>
+                <div class="session-speakers">👤 Elena Rodriguez, Ethereum Foundation</div>
+                <div class="session-description">Advanced blockchain architecture for enterprise-grade applications.</div>
+                <div class="session-actions">
+                    <button class="btn-primary">
+                        Join
+                    </button>
+                    <button class="bookmark-btn">🤍</button>
+                </div>
+            </div>
+            
+            <div class="session-card featured">
+                <div class="featured-badge">Featured</div>
+                <div class="session-status status-future">UPCOMING</div>
+                <div class="session-time">2:00 PM - 3:00 PM</div>
+                <h3 class="session-title">The Future of Autonomous Vehicles</h3>
+                <div class="session-speakers">👤 David Chen, Tesla Autopilot</div>
+                <div class="session-description">Next-generation self-driving technology and safety protocols.</div>
+                <div class="session-actions">
+                    <button class="btn-primary">
+                        View Details
+                    </button>
+                    <button class="bookmark-btn">🤍</button>
+                </div>
+            </div>
+            
+            <div class="session-card ">
+                
+                <div class="session-status status-finished">ENDED</div>
+                <div class="session-time">8:00 AM - 9:00 AM</div>
+                <h3 class="session-title">DevOps & Cloud Infrastructure</h3>
+                <div class="session-speakers">👤 Tom Anderson, Docker</div>
+                <div class="session-description">Modern containerization strategies and deployment pipelines.</div>
+                <div class="session-actions">
+                    <button class="btn-primary">
+                        Watch Recording
+                    </button>
+                    <button class="bookmark-btn">🤍</button>
+                </div>
+            </div>
+            
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <div class="section-header">
+                        <div>
+                            <h2 class="section-title">Finished Sessions</h2>
+                            <p class="section-subtitle">Watch recordings of completed sessions</p>
+                        </div>
+                        <a href="#" class="view-all">View all →</a>
+                    </div>
+                    <div class="sessions-grid">
+                        
+            <div class="session-card ">
+                
+                <div class="session-status status-live">LIVE</div>
+                <div class="session-time">10:00 AM - 11:00 AM</div>
+                <h3 class="session-title">Neural Networks & Deep Learning Frontiers</h3>
+                <div class="session-speakers">👤 Dr. Sarah Chen, MIT AI Lab</div>
+                <div class="session-description">Exploring cutting-edge neural architecture and their applications in autonomous systems.</div>
+                <div class="session-actions">
+                    <button class="btn-primary">
+                        Join
+                    </button>
+                    <button class="bookmark-btn">🤍</button>
+                </div>
+            </div>
+            
+            <div class="session-card ">
+                
+                <div class="session-status status-live">LIVE</div>
+                <div class="session-time">10:30 AM - 11:30 AM</div>
+                <h3 class="session-title">Quantum Computing Breakthrough Applications</h3>
+                <div class="session-speakers">👤 Prof. Michael Zhang, IBM Research</div>
+                <div class="session-description">Real-world quantum computing applications in cryptography and optimization.</div>
+                <div class="session-actions">
+                    <button class="btn-primary">
+                        Join
+                    </button>
+                    <button class="bookmark-btn">🤍</button>
+                </div>
+            </div>
+            
+            <div class="session-card ">
+                
+                <div class="session-status status-live">LIVE</div>
+                <div class="session-time">10:15 AM - 11:15 AM</div>
+                <h3 class="session-title">Blockchain Infrastructure & Scalability</h3>
+                <div class="session-speakers">👤 Elena Rodriguez, Ethereum Foundation</div>
+                <div class="session-description">Advanced blockchain architecture for enterprise-grade applications.</div>
+                <div class="session-actions">
+                    <button class="btn-primary">
+                        Join
+                    </button>
+                    <button class="bookmark-btn">🤍</button>
+                </div>
+            </div>
+            
+            <div class="session-card featured">
+                <div class="featured-badge">Featured</div>
+                <div class="session-status status-future">UPCOMING</div>
+                <div class="session-time">2:00 PM - 3:00 PM</div>
+                <h3 class="session-title">The Future of Autonomous Vehicles</h3>
+                <div class="session-speakers">👤 David Chen, Tesla Autopilot</div>
+                <div class="session-description">Next-generation self-driving technology and safety protocols.</div>
+                <div class="session-actions">
+                    <button class="btn-primary">
+                        View Details
+                    </button>
+                    <button class="bookmark-btn">🤍</button>
+                </div>
+            </div>
+            
+            <div class="session-card ">
+                
+                <div class="session-status status-finished">ENDED</div>
+                <div class="session-time">8:00 AM - 9:00 AM</div>
+                <h3 class="session-title">DevOps & Cloud Infrastructure</h3>
+                <div class="session-speakers">👤 Tom Anderson, Docker</div>
+                <div class="session-description">Modern containerization strategies and deployment pipelines.</div>
+                <div class="session-actions">
+                    <button class="btn-primary">
+                        Watch Recording
+                    </button>
+                    <button class="bookmark-btn">🤍</button>
+                </div>
+            </div>
+            
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <div class="section-header">
+                        <div>
+                            <h2 class="section-title">Featured Speakers</h2>
+                            <p class="section-subtitle">Meet our amazing lineup of industry experts</p>
+                        </div>
+                        <a href="#" class="view-all">View all →</a>
+                    </div>
+                    <div class="speakers-grid">
+                        
+            <div class="speaker-card">
+                <div class="speaker-avatar">D</div>
+                <div class="speaker-name">Dr. Sarah Chen</div>
+                <div class="speaker-title">AI Research Director, MIT AI Lab</div>
+                <div class="speaker-sessions">3 sessions</div>
+            </div>
+            
+            <div class="speaker-card">
+                <div class="speaker-avatar">P</div>
+                <div class="speaker-name">Prof. Michael Zhang</div>
+                <div class="speaker-title">Quantum Researcher, IBM Research</div>
+                <div class="speaker-sessions">2 sessions</div>
+            </div>
+            
+            <div class="speaker-card">
+                <div class="speaker-avatar">E</div>
+                <div class="speaker-name">Elena Rodriguez</div>
+                <div class="speaker-title">Security Lead, Ethereum Foundation</div>
+                <div class="speaker-sessions">4 sessions</div>
+            </div>
+            
+                    </div>
+                </div>
+                
+    </div>
+</body>
+</html>

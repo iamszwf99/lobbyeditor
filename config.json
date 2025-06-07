@@ -1,0 +1,181 @@
+{
+  "layout": {
+    "section_order": [
+      "live",
+      "upcoming",
+      "featured",
+      "finished",
+      "speakers"
+    ],
+    "section_visibility": {
+      "live": true,
+      "upcoming": true,
+      "featured": true,
+      "finished": true,
+      "speakers": true
+    },
+    "grid_columns": "repeat(auto-fit, minmax(400px, 1fr))",
+    "grid_gap": 25,
+    "section_spacing": 50,
+    "content_width": 1400,
+    "content_padding": 40,
+    "responsive_breakpoints": {
+      "mobile": 768,
+      "tablet": 1024,
+      "desktop": 1200
+    }
+  },
+  "header": {
+    "background_color": "#667eea",
+    "logo_text": "TechConnect 2024",
+    "logo_color": "#ffffff",
+    "text_color": "#ffffff",
+    "logo_size": 28,
+    "padding": "15px 40px",
+    "show_live_indicator": true,
+    "show_bookmarks": true,
+    "show_user_info": true
+  },
+  "masthead": {
+    "background_type": "gradient",
+    "background_gradient": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+    "background_image": "",
+    "title_text": "Welcome to TechConnect 2024",
+    "subtitle_text": "The Future of Technology - Two Days of Innovation and Discovery",
+    "text_color": "#ffffff",
+    "title_size": 48,
+    "subtitle_size": 20,
+    "padding": "60px 40px",
+    "show_stats": true,
+    "show_countdown": false,
+    "custom_stats": [
+      {
+        "number": "100+",
+        "label": "Sessions"
+      },
+      {
+        "number": "150+",
+        "label": "Speakers"
+      },
+      {
+        "number": "5000+",
+        "label": "Attendees"
+      }
+    ]
+  },
+  "navigation": {
+    "background_color": "#ffffff",
+    "text_color": "#6b7280",
+    "active_color": "#667eea",
+    "border_color": "#e5e7eb",
+    "tabs": [
+      "Lobby",
+      "My Agenda",
+      "All Sessions",
+      "Speakers",
+      "Networking"
+    ],
+    "font_size": 16,
+    "height": 60
+  },
+  "session_card": {
+    "background_color": "#ffffff",
+    "border_radius": 12,
+    "shadow_color": "rgba(0,0,0,0.08)",
+    "padding": 25,
+    "title_color": "#1f2937",
+    "text_color": "#4b5563",
+    "meta_color": "#6b7280",
+    "button_color": "#667eea",
+    "button_text_color": "#ffffff",
+    "border_width": 0,
+    "border_color": "transparent",
+    "hover_effect": true,
+    "animation_duration": 0.3
+  },
+  "speaker_card": {
+    "background_color": "#ffffff",
+    "border_radius": 12,
+    "padding": 25,
+    "avatar_color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+    "name_color": "#1f2937",
+    "title_color": "#6b7280",
+    "shadow_color": "rgba(0,0,0,0.08)",
+    "avatar_size": 80,
+    "show_session_count": true
+  },
+  "quick_actions": {
+    "background_color": "#ffffff",
+    "border_radius": 12,
+    "padding": 20,
+    "shadow_color": "rgba(0,0,0,0.08)",
+    "search_placeholder": "Search sessions, speakers, topics...",
+    "show_search": true,
+    "show_filters": true,
+    "show_actions": true,
+    "search_suggestions": true
+  },
+  "colors": {
+    "primary": "#667eea",
+    "secondary": "#764ba2",
+    "success": "#10b981",
+    "warning": "#fbbf24",
+    "error": "#ef4444",
+    "neutral": "#6b7280",
+    "body_background": "#f8fafc",
+    "text_primary": "#1f2937",
+    "text_secondary": "#6b7280"
+  },
+  "content": {
+    "sections": {
+      "live": {
+        "title": "Live Now",
+        "subtitle": "Join these sessions happening right now",
+        "icon": "\ud83d\udd34",
+        "enabled": true
+      },
+      "upcoming": {
+        "title": "Coming Up Next",
+        "subtitle": "Sessions starting in the next 2 hours",
+        "icon": "\u23f0",
+        "enabled": true
+      },
+      "featured": {
+        "title": "Featured Sessions - Day 1",
+        "subtitle": "Don't miss these highlighted sessions",
+        "icon": "\u2b50",
+        "enabled": true
+      },
+      "finished": {
+        "title": "Finished Sessions",
+        "subtitle": "Watch recordings of completed sessions",
+        "icon": "\u2705",
+        "enabled": true
+      },
+      "speakers": {
+        "title": "Featured Speakers",
+        "subtitle": "Meet our amazing lineup of industry experts",
+        "icon": "\ud83d\udc65",
+        "enabled": true
+      }
+    },
+    "section_title_size": 28,
+    "section_title_color": "#1f2937",
+    "section_subtitle_color": "#6b7280"
+  },
+  "advanced": {
+    "custom_css": "",
+    "analytics_code": "",
+    "meta_tags": {
+      "description": "Join TechConnect 2024 for cutting-edge technology sessions",
+      "keywords": "technology, conference, AI, blockchain, quantum computing",
+      "author": "TechConnect Organizers"
+    },
+    "social_sharing": {
+      "enabled": true,
+      "title": "Join me at TechConnect 2024!",
+      "description": "Discover the future of technology",
+      "image": ""
+    }
+  }
+}
